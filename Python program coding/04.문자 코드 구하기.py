@@ -7,7 +7,6 @@
 cf. 파일실행은 디렉터리에서 cmd를 검색해 뜨는 커맨드창 위치에서 python "04.문자 코드 구하기.py"로 실행
 """
 
-import sys
 while True :
     result = input("문자 1개를 입력하세요 : ")
     if len(result) == 1 :
