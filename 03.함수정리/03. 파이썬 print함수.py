@@ -32,3 +32,4 @@
     - print( 'a is {0[a]}, b is {0[b]}'.format(locals()) )  >a is apple, b is banana
     - print( 'a is {a}, b is {b}'.format(**locals()) )  >a is apple, b is banana
 """
+
