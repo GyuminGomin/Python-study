@@ -8,12 +8,6 @@
 
 import re
 
-p = re.compile("^python\s\w+", re.MULTILINE)
+s = '<html><head><title>Title</title>'
 
-data = """python one
-life is too short
-python two
-you need python
-python three"""
-
-print(p.findall(data))
+print(type(re.match('<.*>', s).group()))
