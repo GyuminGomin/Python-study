@@ -94,3 +94,17 @@ for i in range(T) :
         break
 for item in dic.items() :
     print(item[0], item[1])
+
+
+# 정답
+"""
+import sys
+sys.stdin=open("input.txt", "rt")
+T=int(input()) # sys모듈로 파이썬 내장함수 input()을 사용하면, 파일안에 있는 문장을 가져옴
+for t in range(T) : # T는 현재 \n으로 나누어진 문장의 갯수를 의미한다.
+    n, s, e, k = map(int, input().split())
+    a = list(map(int, input().split()))
+    a = a[s-1:e]
+    a.sort()
+    print("#%d %d" %(t+1, a[k-1]))
+"""
