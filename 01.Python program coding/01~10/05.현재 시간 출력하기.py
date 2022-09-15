@@ -13,6 +13,6 @@ def cureent_time() :
     now = time.localtime()
     return time.strftime('%Y-%m-%d %H:%M:%S', now)
 
-with open("05.test.log","w") as f : # encoding = "cp949"
+with open("05.test.log", "w") as f : # encoding = "cp949"
     f.write(cureent_time())
     print("파일이 생성되었습니다.")
