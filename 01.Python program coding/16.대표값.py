@@ -56,7 +56,7 @@ while True :
 k_mean_diff = 101 # 차이를 통해서 최솟값 구하기
 k_mean_num = 0 # 숫자 저장
 index = 0 # 인덱스
-mean = round(np.mean(points_list)) # 평균
+mean = round(np.mean(points_list)+0.5) # 평균
 for i in range(stu_numbers) :
     if k_mean_diff >= abs(points_list[i]-mean) :
         if k_mean_diff == abs(points_list[i]-mean) and k_mean_num == points_list[i] :
@@ -97,5 +97,23 @@ for idx, x in enumerate(a) :
             score = x
             res = idx + 1
 print(ave, res)
+"""
+
+# 대표값 문제 오류 수정
+"""
+round는 round_half_even 방식을 채택
+a = 4.500
+print(round(a)) 하면 4가 나옴
+- 정확히 half 지점에 있으면 짝수값으로 근사값을 함
+a = 5.5라면 6이 나오겠지
+
+a = 4.5000
+print(round(a)) -> 4
+b = 5.500
+print(round(b)) -> 6
+
+round방식을 쓰지말고
+a = 66.5라면
+a=a+0.5
 """
         

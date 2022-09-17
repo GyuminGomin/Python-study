@@ -5,9 +5,3 @@
 문자열.split('구분자',분할횟수)
 문자열.split(sep='구분자',maxsplit=분할횟수)
 """
-
-import re
-
-s = '<html><head><title>Title</title>'
-
-print(type(re.match('<.*>', s).group()))
